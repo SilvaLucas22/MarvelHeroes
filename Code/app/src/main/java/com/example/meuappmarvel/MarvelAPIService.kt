@@ -1,7 +1,5 @@
 package com.example.meuappmarvel
 
-import com.example.meuappmarvel.models.Data
-import com.example.meuappmarvel.models.Hero
 import com.example.meuappmarvel.models.RetornoAPI
 import retrofit2.Call
 import retrofit2.http.GET

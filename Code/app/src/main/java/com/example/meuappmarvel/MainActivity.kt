@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun listarHerois(view: View){
-
-        println("Testeeeeeeeeeeeeeeeeeeee")
         val intent = Intent(this, ListarHeroisActivity::class.java)
         startActivity(intent)
 

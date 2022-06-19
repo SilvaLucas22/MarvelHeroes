@@ -40,15 +40,14 @@ data class Hero(
 ){
 
     @JvmName("getName1")
-    fun getName(): String {
-        return name
+    fun getName() = name
 
-    }
+    fun getDescricao() = description
 
     override fun toString(): String {
         return "ID: $id \n" +
                 "Nome: $name \n" +
-                "Descrição: $description"
+                "Descrição: $description \n"
 
     }
 
