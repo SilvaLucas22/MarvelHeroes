@@ -2,15 +2,21 @@ package com.example.meuappmarvel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 
 class ListarHeroisActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_listar_herois)
 
-        val ListaDeHerois = ListarHerois().getAllHeroes(0)
+        GlobalScope.launch {
+            val ListaDeHerois = ListarHerois().getAllHeroes()
+            println(ListaDeHerois.toString())
+            println("Temos " + ListaDeHerois.size + " heróis")
+        }
 
-        println(ListaDeHerois.toString())
 
     }
 
