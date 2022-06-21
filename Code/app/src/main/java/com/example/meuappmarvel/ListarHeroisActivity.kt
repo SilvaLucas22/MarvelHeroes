@@ -15,6 +15,7 @@ class ListarHeroisActivity : AppCompatActivity() {
             val ListaDeHerois = ListarHerois().getAllHeroes()
             println(ListaDeHerois.toString())
             println("Temos " + ListaDeHerois.size + " heróis")
+            //Funcionamento falha às vezes
         }
 
 
