@@ -1,14 +1,9 @@
-package com.example.meuappmarvel
+package com.example.meuappmarvel.consumoAPI
 
 import android.icu.util.Calendar
 import android.icu.util.TimeZone
 import com.example.meuappmarvel.models.Hero
-import com.example.meuappmarvel.models.RetornoAPI
 import kotlinx.coroutines.*
-import okhttp3.Dispatcher
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.math.BigInteger
 import java.security.MessageDigest
 

@@ -1,6 +1,5 @@
-package com.example.meuappmarvel
+package com.example.meuappmarvel.consumoAPI
 
-import retrofit.RxJavaCallAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

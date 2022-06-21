@@ -2,8 +2,8 @@ package com.example.meuappmarvel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.meuappmarvel.consumoAPI.ListarHerois
 import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
 class ListarHeroisActivity : AppCompatActivity() {

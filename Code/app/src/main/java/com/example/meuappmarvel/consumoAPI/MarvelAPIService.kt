@@ -1,4 +1,4 @@
-package com.example.meuappmarvel
+package com.example.meuappmarvel.consumoAPI
 
 import com.example.meuappmarvel.models.RetornoAPI
 import retrofit2.Call
