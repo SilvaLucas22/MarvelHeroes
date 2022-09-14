@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemHero"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <TextView
+        android:id="@+id/nameHero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/itemHero"
+        app:layout_constraintTop_toTopOf="@id/itemHero"
+        app:layout_constraintEnd_toStartOf="@+id/starIcon"
+        android:text="Super herói"
+        android:textColor="#253B40"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/idHero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@+id/itemHero"
+        app:layout_constraintTop_toBottomOf="@id/nameHero"
+        app:layout_constraintEnd_toStartOf="@+id/starIcon"
+        android:text="0000 0000"
+        android:textColor="#253B40"
+        android:textSize="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/starIcon"
+        app:srcCompat="@drawable/ic_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

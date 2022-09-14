@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My App Marvel"
+        android:textSize="24sp"
+        android:layout_marginVertical="50sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@id/ListAllButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ListAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar heróis"
+        android:layout_marginVertical="30sp"
+        android:layout_below="@id/AppTitle"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AppTitle"
+        app:layout_constraintBottom_toTopOf="@id/FindByNameButton"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/FindByNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procurar herói"
+        android:layout_below="@id/ListAllButton"
+        android:layout_marginVertical="30sp"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ListAllButton"
+        app:layout_constraintBottom_toTopOf="@id/FavoritesButton"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/FavoritesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Favoritos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30sp"
+        android:layout_below="@+id/FindByNameButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FindByNameButton"></Button>
+
+</RelativeLayout>
